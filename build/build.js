@@ -14092,7 +14092,8 @@ exports.default = {
 
         list.forEach(function (el, i) {
           el.addEventListener('click', function (e) {
-
+            alert(1111);
+            return;
             list.forEach(function (el, i) {
               el.classList.remove('active');
             });
@@ -18713,7 +18714,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.swiper-container {\r\n    width: 100%;\r\n    height: 150px;\n}\n.swiper-slide {\r\n    text-align: center;\r\n    font-size: 18px;\r\n    background: #fff;\r\n    width: 100%;\r\n    overflow: hidden;\r\n    /* Center slide text vertically */\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: -webkit-flex;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    -webkit-justify-content: center;\r\n    justify-content: center;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    -webkit-align-items: center;\r\n    align-items: center;\n}\n.swiper-slide img{\r\n  display: block;\r\n  width: 100%;\n}\n.nav-index{\r\n  position: fixed;\r\n  left: 0;\r\n  bottom: 0;\r\n  width: 100%;\r\n  height: 40px;\r\n  background-color: #333;\n}\n.nav-index a{\r\n  float: left;\r\n  width: 25%;\r\n  text-align: center;\r\n  line-height: 40px;\n}\n.router-link-exact-active{\r\n  background: #666;\r\n  color: #fff;\n}\r\n", ""]);
+exports.push([module.i, "\n.swiper-container {\r\n    width: 100%;\r\n    height: 150px;\n}\n.swiper-slide {\r\n    text-align: center;\r\n    font-size: 18px;\r\n    /*background: #fff;*/\r\n    width: 100%;\r\n    overflow: hidden;\r\n    /* Center slide text vertically */\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: -webkit-flex;\r\n    display: flex;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    -webkit-justify-content: center;\r\n    justify-content: center;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    -webkit-align-items: center;\r\n    align-items: center;\n}\n.swiper-slide img{\r\n  display: block;\r\n  width: 100%;\n}\n.nav-index{\r\n  position: fixed;\r\n  left: 0;\r\n  bottom: 0;\r\n  width: 100%;\r\n  height: 40px;\r\n  background-color: #333;\n}\n.nav-index a{\r\n  float: left;\r\n  width: 25%;\r\n  text-align: center;\r\n  line-height: 40px;\n}\n.router-link-exact-active{\r\n  background: #666;\r\n  color: #fff;\n}\r\n", ""]);
 
 // exports
 

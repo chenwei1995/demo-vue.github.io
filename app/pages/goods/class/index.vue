@@ -107,7 +107,8 @@ export default {
 
         list.forEach(function(el,i){
           el.addEventListener('click', function(e) {
-
+            alert(1111);
+            return;
             list.forEach(function(el,i){
               el.classList.remove('active');
             })
