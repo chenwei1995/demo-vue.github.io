@@ -1,0 +1,40 @@
+.login{
+  width: 100%;
+  max-width: 640px;
+}
+
+.login-head{
+  background-color: #cd1317;
+  height: 45px;
+}
+
+.login-head a{
+  font-size: 14px;
+  color: #fff;
+  line-height: 45px;
+}
+
+.login-input{
+  margin: 10px;
+}
+
+.login-input label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login-input input{
+  height: 34px;
+  border: 1px solid #ddd;
+  width: 100%;
+  text-indent: 0.5em;
+}
+
+.login-input button{
+  width: 100%;
+  height: 34px;
+  border: 0;
+  background-color: #cd1317;
+  color: #fff;
+  font-size: 14px;
+}

@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a{
+  color: #666;
+  text-decoration: none;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.mt-5{
+  margin-top: 5px;
+}
+
+.clearfix:after{
+  display:block;
+  clear:both;
+  visibility:hidden;
+  height:0;
+  content:" ";
+  font-size:0;
+}
+
+.clearfix{*zoom:1;}
+
+#app{
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}

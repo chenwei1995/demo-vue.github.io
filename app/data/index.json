@@ -1,0 +1,91 @@
+{
+  "menuFirst":[
+    {
+      "link":"/index/",
+      "title":"华为3C",
+      "trac":"华为p9红",
+      "pink":"放量抢",
+      "imgUrl":"https://m.360buyimg.com/mobilecms/jfs/t5191/223/2073778446/3572/fd17a41c/59173692Nd1c5a4ba.jpg!q70.jpg"
+    },{
+      "link":"/index/",
+      "title":"京东家电",
+      "trac":"优惠券叠加享",
+      "pink":"",
+      "imgUrl":"https://m.360buyimg.com/mobilecms/jfs/t4351/79/3394271312/20734/9d71ca81/58df879eN9281deb2.jpg!q70.jpg"
+    },{
+      "link":"/index/",
+      "title":"京东超市",
+      "trac":"咖啡6毛一杯",
+      "pink":"",
+      "imgUrl":"https://m.360buyimg.com/mobilecms/jfs/t5266/278/2285215415/25039/4c4514b9/5919541aNa75622f3.jpg!q70.jpg"
+    },{
+      "link":"/index/",
+      "title":"爱家",
+      "trac":"家具满99-30",
+      "pink":"520爱家",
+      "imgUrl":"https://m.360buyimg.com/mobilecms/jfs/t5482/122/559499264/30545/ed09521d/5901cd15N9b167f8b.jpg!q70.jpg"
+    }
+  ],
+  "menuSecond":[
+    {
+      "link":"#",
+      "title":"爱宝宝",
+      "trac":"满199减50",
+      "imgUrl":"https://m.360buyimg.com/mobilecms/jfs/t5290/26/2293949911/25913/124ed950/5919596fNcd226c3b.png!q70.jpg"
+    },{
+      "link":"#",
+      "title":"爱美丽",
+      "trac":"SKII免费试用",
+      "imgUrl":"https://m.360buyimg.com/mobilecms/jfs/t3169/95/1743830225/7545/a48fd9ec/57d29d65N1d0600da.png!q70.jpg"
+    },{
+      "link":"#",
+      "title":"爱吃",
+      "trac":"19.9任选5件",
+      "imgUrl":"https://m.360buyimg.com/mobilecms/jfs/t5767/99/12065189/15765/af9fbe19/59144efeN9a8706f7.jpg!q70.jpg"
+    },{
+      "link":"#",
+      "title":"爱穿搭",
+      "trac":"低至59元",
+      "imgUrl":"https://m.360buyimg.com/mobilecms/jfs/t4960/92/1133510483/5011/ea41c162/58ed9007N70666163.jpg!q70.jpg"
+    }
+  ],
+  "gbanner":{
+    "link":"#",
+    "imgUrl":"https://img1.360buyimg.com/da/jfs/t5245/353/2283090351/72761/dedafcad/59197d7cN86bf6f57.jpg"
+  },
+  "products":[
+    {
+      "imgUrl":"//m.360buyimg.com//mobilecms/s276x276_jfs/t3760/67/2105923449/354396/ce32c5cb/583fd96dN733019f8.jpg!q70.jpg",
+      "trac":"美蒂亚30W摩托车电动车led大灯U3防水激光炮led车灯12V-60V通用超亮爆闪灯射灯 30w外置银色常亮射灯一个",
+      "price":"69.00"
+    },{
+      "imgUrl":"//m.360buyimg.com//mobilecms/s276x276_jfs/t4450/214/2603311865/145940/abb54440/58f08b37Nd26bab4a.jpg!q70.jpg",
+      "trac":"凉拖鞋女 夏季洗澡拖鞋漏水情侣厚底家居按摩居家镂空浴室拖鞋防滑 粉红色 38-39#适合37-38脚穿#",
+      "price":"19.60"
+    },{
+      "imgUrl":"//m.360buyimg.com//mobilecms/s276x276_jfs/t2857/167/3329705360/56412/66cbabca/578992ebN8d8b7598.jpg!q70.jpg",
+      "trac":"【京东超市】【免打孔】百字 卫生间置物架 浴室挂件 收纳架  吸壁式 太空铝 无痕置物架 三层转角置物架",
+      "price":"69.00"
+    },{
+      "imgUrl":"//m.360buyimg.com//mobilecms/s276x276_jfs/t4639/168/4127931593/243353/ff71bb99/5909b1e2Nd0e02c9b.jpg!q70.jpg",
+      "trac":"【庆店4件套】新品特惠男士百搭时尚腰带+轻薄钱包+真皮钥匙扣+煤油打火机 8688睿智黑色+镜面枪色+打火机+钥匙扣",
+      "price":"69.00"
+    },{
+      "imgUrl":"//m.360buyimg.com//mobilecms/s276x276_jfs/t3760/67/2105923449/354396/ce32c5cb/583fd96dN733019f8.jpg!q70.jpg",
+      "trac":"美蒂亚30W摩托车电动车led大灯U3防水激光炮led车灯12V-60V通用超亮爆闪灯射灯 30w外置银色常亮射灯一个",
+      "price":"69.00"
+    },{
+      "imgUrl":"//m.360buyimg.com//mobilecms/s276x276_jfs/t4450/214/2603311865/145940/abb54440/58f08b37Nd26bab4a.jpg!q70.jpg",
+      "trac":"凉拖鞋女 夏季洗澡拖鞋漏水情侣厚底家居按摩居家镂空浴室拖鞋防滑 粉红色 38-39#适合37-38脚穿#",
+      "price":"19.60"
+    },{
+      "imgUrl":"//m.360buyimg.com//mobilecms/s276x276_jfs/t2857/167/3329705360/56412/66cbabca/578992ebN8d8b7598.jpg!q70.jpg",
+      "trac":"【京东超市】【免打孔】百字 卫生间置物架 浴室挂件 收纳架  吸壁式 太空铝 无痕置物架 三层转角置物架",
+      "price":"69.00"
+    },{
+      "imgUrl":"//m.360buyimg.com//mobilecms/s276x276_jfs/t4639/168/4127931593/243353/ff71bb99/5909b1e2Nd0e02c9b.jpg!q70.jpg",
+      "trac":"【庆店4件套】新品特惠男士百搭时尚腰带+轻薄钱包+真皮钥匙扣+煤油打火机 8688睿智黑色+镜面枪色+打火机+钥匙扣",
+      "price":"69.00"
+    }
+  ]
+}

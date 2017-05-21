@@ -1,0 +1,111 @@
+.index-wrap{
+  padding-bottom: 45px;
+}
+.index-list{
+  margin: 0;
+}
+.index-list-product{
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  border-top: 0;
+  border-left: 0;
+  vertical-align: top;
+}
+.index-list-product:nth-child(2n){
+  border-right: 0;
+  padding-right: 1px;
+}
+.index-list-product .product-txt{
+  width: 50%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.index-list-product .product-txt h3,.index-row-menu h3{
+  font-size: 16px;
+  color: #333;
+}
+.index-list-product .product-txt p,.index-row-menu p{
+  font-size: 12px;
+  color: #666;
+}
+.index-list-product .product-txt span{
+  display: inline-block;
+  padding: 3px 6px;
+  margin-top: 5px;
+  background-color: #ff4a7d;
+  font-size: 12px;
+  color: #fff;
+}
+.index-list-product .product-img{
+  width: 50%;
+}
+.index-list-product .product-img img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.index-row-menu{
+  width: 100%;
+  margin: 0;
+}
+.index-row-menu .row-25{
+  width: 25%;
+  box-sizing: border-box;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.index-row-menu .row-25:last-child{
+  border-right: 0;
+  padding-right: 1px;
+}
+.index-row-menu .row-25 img{
+  width: 80%;
+  max-height: 56px;
+  display: block;
+  margin: 5px auto;
+}
+.gbanner img{
+  width: 98%;
+  margin: 5px auto;
+  display: block;
+}
+.index-list-goods{
+  margin: 0;
+  background-color: #f0f2f5;
+}
+.index-list-goods .row-49{
+  width: 49%;
+  margin-right: 1%;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+.index-list-goods .row-49:nth-child(2n){
+  margin-right: 0;
+  margin-left: 1%;
+}
+.index-list-goods img{
+  display: block;
+  width: 100%;
+  max-height: 180px;
+}
+.index-list-goods p{
+  font-size: 12px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+.index-list-goods h4{
+  font-size: 15px;
+  color: #f06;
+}
+.index-list-goods .similar{
+  font-size: 14px;
+}
