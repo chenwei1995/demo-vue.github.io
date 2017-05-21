@@ -19523,7 +19523,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('p', [_vm._v("选择")]), _vm._v(" "), _c('div', {
     staticClass: "clearfix",
     on: {
-      "click": function($event) {}
+      "click": _vm.getSet
     }
   }, [_c('div', {
     staticClass: "list active",

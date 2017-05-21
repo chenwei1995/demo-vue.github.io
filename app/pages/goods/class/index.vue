@@ -29,7 +29,7 @@
       </div>
       <div class="goods-select-list">
         <p>选择</p>
-        <div class="clearfix" @click="">
+        <div class="clearfix" @click="getSet">
           <div class="list active" data-tag="goods">奶油蛋糕 1kg</div>
           <div class="list" data-tag="goods">蓝莓奶油蛋糕 1kg</div>
           <div class="list" data-tag="goods">草莓奶油蛋糕 1kg</div>
