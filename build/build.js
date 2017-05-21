@@ -12973,6 +12973,9 @@ exports.default = [{
     path: '/goods/eval',
     component: _eval2.default
   }]
+}, {
+  path: '/goods/detail/:id',
+  component: _index12.default
 }];
 
 
