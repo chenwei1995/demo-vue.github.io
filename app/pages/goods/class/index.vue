@@ -121,10 +121,11 @@ export default {
     }
   },
   mounted (){
-    alert(111)
+    // alert(111)
     this.getdata();
-    this.getBanner();
     this.getSet();
+    this.getBanner();
+
   }
 }
 </script>
