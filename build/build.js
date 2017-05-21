@@ -14046,10 +14046,13 @@ exports.default = {
     var flag = false,
         that = this;
     return {
-      data: [],
+      data: {
+        title: ''
+      },
       getdata: function getdata() {
         _axios2.default.get('../demo-vue.github.io/app/data/' + this.$route.params.id + '/goodsDetail.json').then(function (data) {
           that.data = data.data;
+          alert(111);
           console.log(that.data);
         }).catch(function (error) {
           console.log(error);
