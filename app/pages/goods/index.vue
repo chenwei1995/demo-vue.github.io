@@ -59,7 +59,7 @@ export default {
               setH = document.querySelector('.iscroll-box');
 
           setH.style.height = h3 - h2 -h1 +'px';
-          // that.iscroll();
+          that.iscroll();
           // that.refresh()
         }
 
