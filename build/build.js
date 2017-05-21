@@ -14083,32 +14083,24 @@ exports.default = {
         show.style.transform = 'translate(0,100%)';
         flag = false;
       },
-      getSet: function getSet() {
-        var list = document.querySelectorAll('.goods-select-list .list'),
-            show = document.querySelector('.goods-select-list'),
-            set = document.querySelector('.goods-selected span');
+      getSet: function getSet(e) {
+        var set = document.querySelector('.goods-selected span');
+        var e = e || window.event;
+        var src = e.srcElement || e.target;
 
-        list.forEach(function (el, i) {
-          el.addEventListener('click', function (e) {
-
-            list.forEach(function (el, i) {
-              el.classList.remove('active');
-            });
-
-            el.classList.add('active');
-            set.innerHTML = el.innerHTML;
-            show.style.transform = 'translate(0,100%)';
-            flag = false;
-            e.cancelBubble = true;
-          }, false);
-        });
+        if (src.getAttribute('data-tag') == "goods") {
+          var b = src.parentNode.children;
+          for (var i = 0; i < b.length; i++) {
+            b[i].classList.remove('active');
+          }
+          src.classList.add('active');
+        }
       }
     };
   },
   mounted: function mounted() {
     // alert(111)
     this.getdata();
-    this.getSet();
     this.getBanner();
   }
 };
@@ -19526,7 +19518,34 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.getSetClassList
     }
-  }, [_vm._v("\n      已选 "), _c('span', [_vm._v("奶油蛋糕 1kg")])]), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c('div', {
+  }, [_vm._v("\n      已选 "), _c('span', [_vm._v("奶油蛋糕 1kg")])]), _vm._v(" "), _c('div', {
+    staticClass: "goods-select-list"
+  }, [_c('p', [_vm._v("选择")]), _vm._v(" "), _c('div', {
+    staticClass: "clearfix",
+    on: {
+      "click": function($event) {}
+    }
+  }, [_c('div', {
+    staticClass: "list active",
+    attrs: {
+      "data-tag": "goods"
+    }
+  }, [_vm._v("奶油蛋糕 1kg")]), _vm._v(" "), _c('div', {
+    staticClass: "list",
+    attrs: {
+      "data-tag": "goods"
+    }
+  }, [_vm._v("蓝莓奶油蛋糕 1kg")]), _vm._v(" "), _c('div', {
+    staticClass: "list",
+    attrs: {
+      "data-tag": "goods"
+    }
+  }, [_vm._v("草莓奶油蛋糕 1kg")]), _vm._v(" "), _c('div', {
+    staticClass: "list",
+    attrs: {
+      "data-tag": "goods"
+    }
+  }, [_vm._v("奶香鸡蛋蛋糕 1kg")])])])]), _vm._v(" "), _c('div', {
     staticClass: "goods-eval"
   }, [_vm._v("\n    不想写了,累\n  ")]), _vm._v(" "), _c('div', {
     staticClass: "goods-buy"
@@ -19564,20 +19583,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: "jd-ious"
   }, [_c('p', [_vm._v("白条 "), _c('span', [_vm._v("【白条支付】首单最高立减8元")])]), _vm._v(" "), _c('p', [_vm._v("促销 "), _c('span', [_c('i', [_vm._v("限制")]), _vm._v(" "), _c('span', [_vm._v("此价格不与套装优惠同时享受")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "goods-select-list"
-  }, [_c('p', [_vm._v("选择")]), _vm._v(" "), _c('div', {
-    staticClass: "clearfix"
-  }, [_c('div', {
-    staticClass: "list active"
-  }, [_vm._v("奶油蛋糕 1kg")]), _vm._v(" "), _c('div', {
-    staticClass: "list"
-  }, [_vm._v("蓝莓奶油蛋糕 1kg")]), _vm._v(" "), _c('div', {
-    staticClass: "list"
-  }, [_vm._v("草莓奶油蛋糕 1kg")]), _vm._v(" "), _c('div', {
-    staticClass: "list"
-  }, [_vm._v("奶香鸡蛋蛋糕 1kg")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {

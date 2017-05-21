@@ -29,11 +29,11 @@
       </div>
       <div class="goods-select-list">
         <p>选择</p>
-        <div class="clearfix">
-          <div class="list active">奶油蛋糕 1kg</div>
-          <div class="list">蓝莓奶油蛋糕 1kg</div>
-          <div class="list">草莓奶油蛋糕 1kg</div>
-          <div class="list">奶香鸡蛋蛋糕 1kg</div>
+        <div class="clearfix" @click="">
+          <div class="list active" data-tag="goods">奶油蛋糕 1kg</div>
+          <div class="list" data-tag="goods">蓝莓奶油蛋糕 1kg</div>
+          <div class="list" data-tag="goods">草莓奶油蛋糕 1kg</div>
+          <div class="list" data-tag="goods">奶香鸡蛋蛋糕 1kg</div>
         </div>
       </div>
     </div>
@@ -98,34 +98,27 @@ export default {
           show.style.transform = 'translate(0,100%)';
           flag = false;
       },
-      getSet:function(){
-        var list = document.querySelectorAll('.goods-select-list .list'),
-            show = document.querySelector('.goods-select-list'),
-            set = document.querySelector('.goods-selected span');
+      getSet:function(e){
+        var set = document.querySelector('.goods-selected span');
+        var e = e || window.event;
+    		var src = e.srcElement || e.target;
 
-        list.forEach(function(el,i){
-          el.addEventListener('click', function(e) {
+    		if( src.getAttribute('data-tag') == "goods" ){
+    			var b = src.parentNode.children;
+    			for ( var i = 0; i<b.length; i++ ) {
+    				b[i].classList.remove('active')
+    			}
+          src.classList.add('active')
+    		}
 
-            list.forEach(function(el,i){
-              el.classList.remove('active');
-            })
 
-            el.classList.add('active');
-            set.innerHTML = el.innerHTML;
-            show.style.transform = 'translate(0,100%)';
-            flag = false;
-            e.cancelBubble = true;
-          },false);
-        })
       }
     }
   },
   mounted (){
     // alert(111)
     this.getdata();
-    this.getSet();
     this.getBanner();
-
   }
 }
 </script>
