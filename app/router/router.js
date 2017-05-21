@@ -65,9 +65,6 @@ export default[
         component:goodseval
       }
     ]
-  },{
-    path:'/goods/detail/:id',
-    component:goodsInfo
   }
 ]
 

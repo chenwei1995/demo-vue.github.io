@@ -12973,9 +12973,6 @@ exports.default = [{
     path: '/goods/eval',
     component: _eval2.default
   }]
-}, {
-  path: '/goods/detail/:id',
-  component: _index12.default
 }];
 
 
@@ -14207,8 +14204,8 @@ exports.default = {
               setH = document.querySelector('.iscroll-box');
 
           setH.style.height = h3 - h2 - h1 + 'px';
-          that.iscroll();
-          that.refresh();
+          // that.iscroll();
+          // that.refresh()
         }
 
         setTimeout(function () {
