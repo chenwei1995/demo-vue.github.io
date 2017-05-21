@@ -21872,13 +21872,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: "iscroll-box"
   }, [_c('div', {
-    staticClass: "scroll-box"
+    staticClass: "scroll-box",
+    on: {
+      "click": _vm.aaaa
+    }
   }, [_c('ul', _vm._l((_vm.data), function(key) {
-    return _c('li', {
-      on: {
-        "click": _vm.aaaa
-      }
-    }, [_c('router-link', {
+    return _c('li', [_c('router-link', {
       attrs: {
         "to": '/goods/detail/' + key.id
       }

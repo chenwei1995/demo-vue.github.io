@@ -1,8 +1,8 @@
 <template lang="html">
   <div class="iscroll-box">
-    <div class="scroll-box">
+    <div class="scroll-box" @click="aaaa">
       <ul>
-        <li v-for="key in data" @click="aaaa">
+        <li v-for="key in data">
           <router-link :to="'/goods/detail/'+key.id" >
             <div class="left goods-img">
               <img :src="key.imgUrl" alt="">
