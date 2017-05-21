@@ -14206,7 +14206,7 @@ exports.default = {
           setH.style.height = h3 - h2 - h1 + 'px';
           that.iscroll();
           that.refresh();
-        }, 100);
+        }, 300);
       },
       refresh: function refresh() {
         myScroll.on('scrollEnd', function () {

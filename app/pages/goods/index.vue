@@ -61,7 +61,7 @@ export default {
           setH.style.height = h3 - h2 -h1 +'px';
           that.iscroll();
           that.refresh()
-        }, 100);
+        }, 300);
       },
       refresh:function(){
         myScroll.on('scrollEnd', function() { // 滚动结束
