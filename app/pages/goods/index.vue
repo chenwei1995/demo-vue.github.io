@@ -3,7 +3,7 @@
     <div class="scroll-box">
       <ul>
         <li v-for="key in data">
-
+          <router-link :to="'/goods/detail/'+key.id">
             <div class="left goods-img">
               <img :src="key.imgUrl" alt="">
             </div>
@@ -12,7 +12,8 @@
               <b>￥{{key.price}}</b>
               <span>{{key.auto}}</span>
             </div>
-          <button>★<router-link :to="'/goods/detail/'+key.id" >11111</router-link></button>
+          </router-link>
+          <button>★</button>
         </li>
       </ul>
     </div>
@@ -29,9 +30,6 @@ export default {
   data (){
     var that = this;
     return {
-      aaaa:function(){
-        alert(1111)
-      },
       data:[],
       getdata:function(){
         axios.get('../demo-vue.github.io/app/data/goods.json')
