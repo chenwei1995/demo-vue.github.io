@@ -108,7 +108,9 @@ export default {
     			for ( var i = 0; i<b.length; i++ ) {
     				b[i].classList.remove('active')
     			}
-          src.classList.add('active')
+          src.classList.add('active');
+
+          set.innerHTML = src.innerHTML;
     		}
 
 

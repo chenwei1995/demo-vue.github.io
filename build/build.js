@@ -14094,6 +14094,8 @@ exports.default = {
             b[i].classList.remove('active');
           }
           src.classList.add('active');
+
+          set.innerHTML = src.innerHTML;
         }
       }
     };
