@@ -14208,11 +14208,10 @@ exports.default = {
           that.refresh();
         }
 
-        if (window.onload) {
-          console.log(1);
-        } else {
-          console.log(2);
-        }
+        setTimeout(function () {
+          // body...
+          autohei();
+        }, 800);
       },
       refresh: function refresh() {
         myScroll.on('scrollEnd', function () {
