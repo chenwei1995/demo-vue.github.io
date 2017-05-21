@@ -3,7 +3,7 @@
     <div class="scroll-box">
       <ul>
         <li v-for="key in data">
-          <router-link :to="'/goods/detail/'+key.id" @click="aaa">
+          <router-link :to="'/goods/detail/'+key.id" @click="aaaa">
             <div class="left goods-img">
               <img :src="key.imgUrl" alt="">
             </div>
@@ -30,7 +30,7 @@ export default {
   data (){
     var that = this;
     return {
-      aaa:function(){
+      aaaa:function(){
         alert(this)
       },
       data:[],

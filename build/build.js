@@ -14177,7 +14177,7 @@ exports.default = {
   data: function data() {
     var that = this;
     return {
-      aaa: function aaa() {
+      aaaa: function aaaa() {
         alert(this);
       },
       data: [],
@@ -21879,7 +21879,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "to": '/goods/detail/' + key.id
       },
       on: {
-        "click": _vm.aaa
+        "click": _vm.aaaa
       }
     }, [_c('div', {
       staticClass: "left goods-img"
