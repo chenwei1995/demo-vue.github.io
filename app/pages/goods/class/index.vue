@@ -47,7 +47,7 @@
   </div>
 </template>
 
-<script>
+<script type="text/babel">
 import axios from 'axios';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -59,14 +59,12 @@ export default {
     let flag = false,
         that = this;
     return {
-      data:{
-        title:''
-      },
+      data:[],
       getdata:function(){
-        alert('../demo-vue.github.io/app/data/'+this.$route.params.id+'/goodsDetail.json')
         axios.get('../demo-vue.github.io/app/data/'+this.$route.params.id+'/goodsDetail.json')
           .then(function(data){
             that.data = data.data;
+            console.log(that.data);
           })
           .catch(function(error){
             console.log(error);
@@ -107,8 +105,7 @@ export default {
 
         list.forEach(function(el,i){
           el.addEventListener('click', function(e) {
-            alert(1111);
-            return;
+
             list.forEach(function(el,i){
               el.classList.remove('active');
             })
@@ -124,9 +121,10 @@ export default {
     }
   },
   mounted (){
+    alert(111)
+    this.getdata();
     this.getBanner();
     this.getSet();
-    this.getdata();
   }
 }
 </script>

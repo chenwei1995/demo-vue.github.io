@@ -14046,13 +14046,11 @@ exports.default = {
     var flag = false,
         that = this;
     return {
-      data: {
-        title: ''
-      },
+      data: [],
       getdata: function getdata() {
-        alert('../demo-vue.github.io/app/data/' + this.$route.params.id + '/goodsDetail.json');
         _axios2.default.get('../demo-vue.github.io/app/data/' + this.$route.params.id + '/goodsDetail.json').then(function (data) {
           that.data = data.data;
+          console.log(that.data);
         }).catch(function (error) {
           console.log(error);
         });
@@ -14092,8 +14090,7 @@ exports.default = {
 
         list.forEach(function (el, i) {
           el.addEventListener('click', function (e) {
-            alert(1111);
-            return;
+
             list.forEach(function (el, i) {
               el.classList.remove('active');
             });
@@ -14109,9 +14106,10 @@ exports.default = {
     };
   },
   mounted: function mounted() {
+    alert(111);
+    this.getdata();
     this.getBanner();
     this.getSet();
-    this.getdata();
   }
 };
 
