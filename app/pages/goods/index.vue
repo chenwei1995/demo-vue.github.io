@@ -47,7 +47,8 @@ export default {
       		mouseWheel: true,
       		interactiveScrollbars: true,
       		shrinkScrollbars: 'scale',
-      		fadeScrollbars: true
+      		fadeScrollbars: true,
+          click: true
       	});
       },
       getHeight:function(){
