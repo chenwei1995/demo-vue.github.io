@@ -13919,7 +13919,7 @@ exports.default = {
     return {
       dataPush: [],
       getdata: function getdata() {
-        _axios2.default.get('../app/data/banner.json').then(function (data) {
+        _axios2.default.get('../demo-vue.github.io/app/data/banner.json').then(function (data) {
           _self.dataPush.push(data.data);
           _vue2.default.nextTick(function () {
             _self.getbanner();
@@ -14048,7 +14048,7 @@ exports.default = {
     return {
       data: [],
       getdata: function getdata() {
-        _axios2.default.get('../app/data/' + this.$route.params.id + '/goodsDetail.json').then(function (data) {
+        _axios2.default.get('../demo-vue.github.io/app/data/' + this.$route.params.id + '/goodsDetail.json').then(function (data) {
           that.data = data.data;
           console.log(that.data);
         }).catch(function (error) {
@@ -14179,7 +14179,7 @@ exports.default = {
     return {
       data: [],
       getdata: function getdata() {
-        _axios2.default.get('../app/data/goods.json').then(function (data) {
+        _axios2.default.get('../demo-vue.github.io/app/data/goods.json').then(function (data) {
           that.data = data.data;
           console.log(data);
         }).catch(function (error) {
@@ -14453,7 +14453,7 @@ exports.default = {
         var password = document.querySelector('.password');
         var arr = void 0,
             tips = void 0;
-        _axios2.default.get('../app/data/login.json').then(function (response) {
+        _axios2.default.get('../demo-vue.github.io/app/data/login.json').then(function (response) {
           arr = response;
           console.log(arr.data);
           //  alert(1)

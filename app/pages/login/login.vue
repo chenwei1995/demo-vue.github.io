@@ -31,7 +31,7 @@ export default {
         var password = document.querySelector('.password');
         let arr,
             tips;
-        axios.get('../app/data/login.json')
+        axios.get('../demo-vue.github.io/app/data/login.json')
           .then(function (response) {
             arr = response;
             console.log(arr.data)

@@ -32,7 +32,7 @@ export default {
     return {
       data:[],
       getdata:function(){
-        axios.get('../app/data/goods.json')
+        axios.get('../demo-vue.github.io/app/data/goods.json')
           .then(function(data){
             that.data = data.data;
             console.log(data);

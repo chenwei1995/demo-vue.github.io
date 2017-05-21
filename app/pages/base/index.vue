@@ -31,7 +31,7 @@ export default {
     return {
       dataPush:[],
       getdata:function(){
-        axios.get('../app/data/banner.json')
+        axios.get('../demo-vue.github.io/app/data/banner.json')
           .then(function(data){
             _self.dataPush.push(data.data);
             Vue.nextTick(function(){

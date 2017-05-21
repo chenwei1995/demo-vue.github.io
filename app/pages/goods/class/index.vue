@@ -61,7 +61,7 @@ export default {
     return {
       data:[],
       getdata:function(){
-        axios.get('../app/data/'+this.$route.params.id+'/goodsDetail.json')
+        axios.get('../demo-vue.github.io/app/data/'+this.$route.params.id+'/goodsDetail.json')
           .then(function(data){
             that.data = data.data;
             console.log(that.data);
