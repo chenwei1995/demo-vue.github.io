@@ -14050,13 +14050,11 @@ exports.default = {
         title: ''
       },
       getdata: function getdata() {
+        alert('../demo-vue.github.io/app/data/' + this.$route.params.id + '/goodsDetail.json');
         _axios2.default.get('../demo-vue.github.io/app/data/' + this.$route.params.id + '/goodsDetail.json').then(function (data) {
           that.data = data.data;
-          alert(111);
-          console.log(that.data);
         }).catch(function (error) {
           console.log(error);
-          alert(2222);
         });
       },
       getBanner: function getBanner() {

@@ -63,15 +63,13 @@ export default {
         title:''
       },
       getdata:function(){
+        alert('../demo-vue.github.io/app/data/'+this.$route.params.id+'/goodsDetail.json')
         axios.get('../demo-vue.github.io/app/data/'+this.$route.params.id+'/goodsDetail.json')
           .then(function(data){
             that.data = data.data;
-            alert(111)
-            console.log(that.data);
           })
           .catch(function(error){
             console.log(error);
-            alert(2222)
           })
       },
       getBanner:function(){
