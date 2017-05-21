@@ -51,19 +51,24 @@ export default {
       	});
       },
       getHeight:function(){
-        window.onload = function(){
-          setTimeout(function() {
-            // body...
-            var h1 = document.querySelector('.banner').offsetHeight,
-                h2 = document.querySelector('.nav-index').offsetHeight,
-                h3 = document.documentElement.clientHeight,
-                setH = document.querySelector('.iscroll-box');
 
-            setH.style.height = h3 - h2 -h1 +'px';
-            that.iscroll();
-            that.refresh()
-          }, 300);
+        function autohei(){
+          var h1 = document.querySelector('.banner').offsetHeight,
+              h2 = document.querySelector('.nav-index').offsetHeight,
+              h3 = document.documentElement.clientHeight,
+              setH = document.querySelector('.iscroll-box');
+
+          setH.style.height = h3 - h2 -h1 +'px';
+          that.iscroll();
+          that.refresh()
         }
+
+        if(window.onload){
+          console.log(1);
+        }else{
+          console.log(2);
+        }
+
       },
       refresh:function(){
         myScroll.on('scrollEnd', function() { // 滚动结束
