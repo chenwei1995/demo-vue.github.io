@@ -3,7 +3,7 @@
     <div class="scroll-box">
       <ul>
         <li v-for="key in data">
-          <router-link :to="'/goods/detail/'+key.id">
+          <router-link :to="'/goods/detail/'+key.id" @click="aaa">
             <div class="left goods-img">
               <img :src="key.imgUrl" alt="">
             </div>
@@ -30,6 +30,9 @@ export default {
   data (){
     var that = this;
     return {
+      aaa:function(){
+        alert(this)
+      },
       data:[],
       getdata:function(){
         axios.get('../demo-vue.github.io/app/data/goods.json')

@@ -14177,6 +14177,9 @@ exports.default = {
   data: function data() {
     var that = this;
     return {
+      aaa: function aaa() {
+        alert(this);
+      },
       data: [],
       getdata: function getdata() {
         _axios2.default.get('../demo-vue.github.io/app/data/goods.json').then(function (data) {
@@ -21874,6 +21877,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     return _c('li', [_c('router-link', {
       attrs: {
         "to": '/goods/detail/' + key.id
+      },
+      on: {
+        "click": _vm.aaa
       }
     }, [_c('div', {
       staticClass: "left goods-img"
