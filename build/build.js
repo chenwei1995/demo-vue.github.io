@@ -14313,7 +14313,7 @@ exports.default = {
         products: {}
       },
       getData: function getData() {
-        _axios2.default.get('../app/data/index.json').then(function (info) {
+        _axios2.default.get('../demo-vue.github.io/app/data/index.json').then(function (info) {
           that.dataInfo = info.data;
         }).catch(function (error) {
           console.log(error);

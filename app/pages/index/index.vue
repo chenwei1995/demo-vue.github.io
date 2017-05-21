@@ -91,7 +91,7 @@
           products:{}
         },
         getData:function(){
-          axios.get('../app/data/index.json')
+          axios.get('../demo-vue.github.io/app/data/index.json')
             .then(function(info){
               that.dataInfo = info.data;
             })
