@@ -22,7 +22,7 @@
 
 <script>
 import axios from 'axios';
-require('../../scripts/iscroll.js');
+// require('../../scripts/iscroll.js');
 
 var myScroll;
 
@@ -41,16 +41,6 @@ export default {
             console.log(error);
           })
       },
-      iscroll:function(){
-        myScroll = new IScroll('.iscroll-box', {
-      		scrollbars: true,
-      		mouseWheel: true,
-      		interactiveScrollbars: true,
-      		shrinkScrollbars: 'scale',
-      		fadeScrollbars: true,
-          click: true
-      	});
-      },
       getHeight:function(){
 
         function autohei(){
@@ -60,7 +50,7 @@ export default {
               setH = document.querySelector('.iscroll-box');
 
           setH.style.height = h3 - h2 -h1 +'px';
-          that.iscroll();
+          // that.iscroll();
           // that.refresh()
         }
 
@@ -69,16 +59,6 @@ export default {
           autohei()
         }, 800);
 
-      },
-      refresh:function(){
-        myScroll.on('scrollEnd', function() { // 滚动结束
-          var height = this.y,
-              bottomHeight = this.maxScrollY - height;
-          if (bottomHeight < 60 && bottomHeight >= 0) {
-              alert('已经到底了！！！');
-              return;
-          }
-        });
       }
     }
   },
