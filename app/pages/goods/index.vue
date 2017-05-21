@@ -31,7 +31,7 @@ export default {
     var that = this;
     return {
       aaaa:function(){
-        alert(this)
+        alert(1111)
       },
       data:[],
       getdata:function(){
