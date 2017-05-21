@@ -3,7 +3,7 @@
     <div class="scroll-box" @click="aaaa">
       <ul>
         <li v-for="key in data">
-          <router-link :to="'/goods/detail/'+key.id" >
+          <router-link :to="'/goods/detail/'+key.id" ></router-link>
             <div class="left goods-img">
               <img :src="key.imgUrl" alt="">
             </div>
@@ -12,7 +12,6 @@
               <b>￥{{key.price}}</b>
               <span>{{key.auto}}</span>
             </div>
-          </router-link>
           <button>★</button>
         </li>
       </ul>
