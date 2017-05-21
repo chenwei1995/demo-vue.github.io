@@ -71,6 +71,7 @@ export default {
           })
           .catch(function(error){
             console.log(error);
+            alert(2222)
           })
       },
       getBanner:function(){

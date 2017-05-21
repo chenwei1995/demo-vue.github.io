@@ -14056,6 +14056,7 @@ exports.default = {
           console.log(that.data);
         }).catch(function (error) {
           console.log(error);
+          alert(2222);
         });
       },
       getBanner: function getBanner() {
