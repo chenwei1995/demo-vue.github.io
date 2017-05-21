@@ -14196,17 +14196,19 @@ exports.default = {
         });
       },
       getHeight: function getHeight() {
-        setTimeout(function () {
-          // body...
-          var h1 = document.querySelector('.banner').offsetHeight,
-              h2 = document.querySelector('.nav-index').offsetHeight,
-              h3 = document.documentElement.clientHeight,
-              setH = document.querySelector('.iscroll-box');
+        window.onload = function () {
+          setTimeout(function () {
+            // body...
+            var h1 = document.querySelector('.banner').offsetHeight,
+                h2 = document.querySelector('.nav-index').offsetHeight,
+                h3 = document.documentElement.clientHeight,
+                setH = document.querySelector('.iscroll-box');
 
-          setH.style.height = h3 - h2 - h1 + 'px';
-          that.iscroll();
-          that.refresh();
-        }, 300);
+            setH.style.height = h3 - h2 - h1 + 'px';
+            that.iscroll();
+            that.refresh();
+          }, 300);
+        };
       },
       refresh: function refresh() {
         myScroll.on('scrollEnd', function () {
