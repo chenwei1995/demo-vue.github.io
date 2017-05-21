@@ -20909,7 +20909,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n.iscroll-box {\n  position: relative;\n  width: 100%;\n  overflow: hidden;\n}\n.scroll-box {\n  position: absolute;\n  width: 100%;\n  -webkit-transform: translateZ(0);\n  -moz-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  -o-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-text-size-adjust: none;\n  -moz-text-size-adjust: none;\n  -ms-text-size-adjust: none;\n  -o-text-size-adjust: none;\n  text-size-adjust: none;\n}\n.iscroll-box li {\n  overflow: hidden;\n  position: relative;\n  padding: 5px;\n  border-bottom: 1px solid #eee;\n}\n.iscroll-box li a {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n}\n.iscroll-box .goods-img {\n  width: 100px;\n  height: 100px;\n}\n.iscroll-box img {\n  display: block;\n  width: 100%;\n  height: 100%;\n}\n.iscroll-box .goods-txt {\n  margin-left: 12px;\n  width: 65%;\n}\n.iscroll-box .goods-txt h3 {\n  font-size: 15px;\n  color: #333;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  word-break: break-word;\n}\n.iscroll-box .goods-txt p {\n  font-size: 13px;\n  color: #666;\n}\n.iscroll-box .goods-txt b {\n  display: block;\n  margin-top: 10px;\n  font-size: 16px;\n  color: #f06;\n}\n.iscroll-box .goods-txt span {\n  border: 1px solid #f06;\n  padding: 3px 5px;\n  font-size: 12px;\n  color: #666;\n}\n.iscroll-box button {\n  font-size: 12px;\n  color: #f60;\n  background-color: #fff;\n  border: 1px solid #ddd;\n  padding: 3px 10px;\n  position: absolute;\n  right: 5px;\n  bottom: 5px;\n  z-index: 2;\n}\n", ""]);
+exports.push([module.i, "\n.iscroll-box {\n  position: relative;\n  width: 100%;\n  overflow: hidden;\n}\n.scroll-box {\n  position: absolute;\n  width: 100%;\n  -webkit-transform: translateZ(0);\n  -moz-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  -o-transform: translateZ(0);\n  transform: translateZ(0);\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-text-size-adjust: none;\n  -moz-text-size-adjust: none;\n  -ms-text-size-adjust: none;\n  -o-text-size-adjust: none;\n  text-size-adjust: none;\n}\n.iscroll-box li {\n  overflow: hidden;\n  position: relative;\n  padding: 5px;\n  border-bottom: 1px solid #eee;\n}\n.iscroll-box .goods-img {\n  width: 100px;\n  height: 100px;\n}\n.iscroll-box img {\n  display: block;\n  width: 100%;\n  height: 100%;\n}\n.iscroll-box .goods-txt {\n  margin-left: 12px;\n  width: 65%;\n}\n.iscroll-box .goods-txt h3 {\n  font-size: 15px;\n  color: #333;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  word-break: break-word;\n}\n.iscroll-box .goods-txt p {\n  font-size: 13px;\n  color: #666;\n}\n.iscroll-box .goods-txt b {\n  display: block;\n  margin-top: 10px;\n  font-size: 16px;\n  color: #f06;\n}\n.iscroll-box .goods-txt span {\n  border: 1px solid #f06;\n  padding: 3px 5px;\n  font-size: 12px;\n  color: #666;\n}\n.iscroll-box button {\n  font-size: 12px;\n  color: #f60;\n  background-color: #fff;\n  border: 1px solid #ddd;\n  padding: 3px 10px;\n  position: absolute;\n  right: 5px;\n  bottom: 5px;\n  z-index: 2;\n}\n", ""]);
 
 // exports
 
@@ -21871,16 +21871,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: "iscroll-box"
   }, [_c('div', {
-    staticClass: "scroll-box",
-    on: {
-      "click": _vm.aaaa
-    }
+    staticClass: "scroll-box"
   }, [_c('ul', _vm._l((_vm.data), function(key) {
-    return _c('li', [_c('router-link', {
-      attrs: {
-        "to": '/goods/detail/' + key.id
-      }
-    }), _vm._v(" "), _c('div', {
+    return _c('li', [_c('div', {
       staticClass: "left goods-img"
     }, [_c('img', {
       attrs: {
@@ -21889,7 +21882,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     })]), _vm._v(" "), _c('div', {
       staticClass: "left goods-txt"
-    }, [_c('h3', [_vm._v(_vm._s(key.title))]), _vm._v(" "), _c('b', [_vm._v("￥" + _vm._s(key.price))]), _vm._v(" "), _c('span', [_vm._v(_vm._s(key.auto))])]), _vm._v(" "), _c('button', [_vm._v("★")])], 1)
+    }, [_c('h3', [_vm._v(_vm._s(key.title))]), _vm._v(" "), _c('b', [_vm._v("￥" + _vm._s(key.price))]), _vm._v(" "), _c('span', [_vm._v(_vm._s(key.auto))])]), _vm._v(" "), _c('button', [_vm._v("★"), _c('router-link', {
+      attrs: {
+        "to": '/goods/detail/' + key.id
+      }
+    }, [_vm._v("11111")])], 1)])
   }))])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
