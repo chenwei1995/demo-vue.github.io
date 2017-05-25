@@ -14,7 +14,7 @@ module.exports = {
     filename:'build.js'
   },
 
-  devServer:{    
+  devServer:{
     historyApiFallback:true,
     hot:true,
     inline:true

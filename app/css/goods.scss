@@ -2,8 +2,10 @@
   // padding-bottom: 45px;
   position: relative;
   width: 100%;
-  overflow: hidden;
-  overflow-y: scroll;
+  // padding-bottom: 45px;
+}
+.scroll-box{
+  padding-bottom: 45px;
 }
 .iscroll-box li{
   overflow: hidden;
@@ -39,6 +41,7 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   word-break: break-word;
+  -moz-height:30px;
 }
 .iscroll-box .goods-txt p{
   font-size: 13px;

@@ -9,6 +9,7 @@ import goodsDetail from '../pages/goods/nav/detail';
 import goodsInfo from '../pages/goods/class/index';
 import goodscont from '../pages/goods/class/info';
 import goodseval from '../pages/goods/class/eval';
+import goodsBuy from '../pages/buy/index';
 
 // const app = resolve => require(['../app.vue'], resolve)
 // const login = resolve => require(['../pages/login/login.vue'], resolve)
@@ -65,6 +66,9 @@ export default[
         component:goodseval
       }
     ]
+  },{
+    path:'/goods/buy',
+    component:goodsBuy
   }
 ]
 

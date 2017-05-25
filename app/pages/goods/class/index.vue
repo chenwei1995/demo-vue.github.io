@@ -38,9 +38,9 @@
       </div>
     </div>
     <div class="goods-eval">
-      不想写了,累
+      后面暂无信息
     </div>
-    <div class="goods-buy">
+    <div class="goods-buy" @click = "getCancel">
       <router-link to="/goods/buy">点击购买</router-link>
       <button type="button" name="button">加入购物车</button>
     </div>
@@ -112,17 +112,18 @@ export default {
 
           set.innerHTML = src.innerHTML;
     		}
-
-
+      },
+      getCancel:function(e){
+        e.cancelBubble = true;
       }
     }
   },
   mounted (){
-    // alert(111)
     this.getdata();
     this.getBanner();
   }
 }
+
 </script>
 
 <style media="screen" src="../../../css/goods-detail.scss" lang="scss"></style>

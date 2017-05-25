@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "ahaha",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline",
-    "build": "webpack --display-error-details",
-    "watch": "webpack --progress --colors --watch"
+    "start": "webpack-dev-server --open --hot --inline",
+    "dev": "webpack --display-error-details --progress --colors --watch"
   },
   "author": "webapp",
   "license": "ISC",

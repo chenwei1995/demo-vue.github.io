@@ -65,6 +65,10 @@ export default {
   mounted (){
     this.getdata();
     this.getHeight()
+  },
+  destroyed (){
+
+    console.log(22255);
   }
 }
 </script>
